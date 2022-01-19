@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Dongle;
+    src: url('Dongle-Regular.ttf');
+}
+body{
+    background-color:floralwhite !important;
+}
+h1{
+    font-family: Dongle;
+}
+
+.mainText{
+    border-radius: 5%;
+}
+.downloadBt{
+    width: 150px;
+}
+.sidePanel{
+    background-color: #fff;
+    height: 918px;
+    width: 510px;
+}
