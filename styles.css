@@ -1,16 +1,22 @@
+:root{
+    --general-box-shadow: 0px 3px 5px 0px #eeeeee;
+}
 @font-face {
     font-family: Dongle;
     src: url('Dongle-Regular.ttf');
 }
 body{
     background-color:floralwhite !important;
+    font-family: Dongle !important;
+    font-size: 20px !important;
 }
-div{
-    border: 1px dashed black;
-}
-h1{
+/* div{
+border: 1px dashed black; 
+} */
+h1, h2{
     font-family: Dongle;
 }
+
 
 .mainText{
     border-radius: 5px;
@@ -21,9 +27,50 @@ h1{
 }
 .sidePanel{
     background-color: #fff;
-    height: 918px;
+    height: 925px;
     width: 510px;
 }
     .sidePanelSection{
         height: 20%;
+        padding: 5px;
     }
+    .sidePanelSection:not(.backgroundColorSection){
+        padding: 15px;
+    }
+    .backgroundColorSection{
+        padding-bottom: 15px;
+    }
+        .fontTypeBt{
+            width: 105px;
+            height: 30px;
+            margin: 10px 5px;
+            font-size: 70%;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: var(--general-box-shadow);
+        }
+        .backgroundColorBt, .fontColorBt{
+            margin: 5px 5px;
+            border: none;
+            border-radius: 50%;
+            height: 55px;
+            width: 55px;
+            box-shadow: var(--general-box-shadow);
+        }
+        .cornerCurveBt{
+            width: 50px;
+            margin: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: var(--general-box-shadow);
+        }
+        .textStyleBt{
+            width: 100px;
+            margin: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: var(--general-box-shadow);
+        }
