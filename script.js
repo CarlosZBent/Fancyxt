@@ -1,10 +1,12 @@
 console.log('console working')
 
-document.getElementById('figuras').contentEditable = 'true';
-    document.getElementById('figuras').designMode='on';
+// *******************************************************************
+// snippet taken from tutorial. only changed the id names
+document.getElementById('mainText').contentEditable = 'true';
+    document.getElementById('mainText').designMode='on';
     $(function() {
-        $("#btnSave2").click(function() {
-        html2canvas($("#figuras"), {
+        $("#downloadBt").click(function() {
+        html2canvas($("#mainText"), {
             onrendered: function(canvas) {
             saveAs(canvas.toDataURL(), 'Fancyxt.png');
             }
@@ -23,3 +25,4 @@ document.getElementById('figuras').contentEditable = 'true';
         }
         }
     });
+// *******************************************************************
