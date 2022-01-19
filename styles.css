@@ -32,12 +32,12 @@ h1, h2{
 }
 .sidePanel{
     background-color: #fff;
-    height: 925px;
+    min-height: 925px;
     width: 510px;
     border-radius: 15px;
 }
     .sidePanelSection{
-        height: 20%;
+        height: 25%;
         padding: 5px;
     }
     .sidePanelSection:not(.backgroundColorSection){
@@ -47,10 +47,10 @@ h1, h2{
         padding-bottom: 15px;
     }
         .fontTypeBt{
-            width: 105px;
-            height: 30px;
+            width: 120px;
+            height: 33px;
             margin: 10px 5px;
-            font-size: 70%;
+            font-size: 20px;
             border: none;
             border-radius: 5px;
             background-color: white;
@@ -65,7 +65,8 @@ h1, h2{
             box-shadow: var(--general-box-shadow);
         }
         .cornerCurveBt{
-            width: 50px;
+            width: 65px;
+            font-size: 25px;
             margin: 5px 10px;
             border: none;
             border-radius: 5px;
@@ -73,7 +74,8 @@ h1, h2{
             box-shadow: var(--general-box-shadow);
         }
         .textStyleBt{
-            width: 100px;
+            width: 130px;
+            font-size: 30px;
             margin: 5px 10px;
             border: none;
             border-radius: 5px;
