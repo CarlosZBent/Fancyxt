@@ -6,12 +6,12 @@
     src: url('Dongle-Regular.ttf');
 }
 body{
-    background-color:floralwhite !important;
+    background: linear-gradient(to right, #CAEAFF, #FFE8E8 80%);
     font-family: Dongle !important;
     font-size: 20px !important;
 }
 /* div{
-border: 1px dashed black; 
+border: 1px dashed black;
 } */
 h1, h2{
     font-family: Dongle;
@@ -20,15 +20,22 @@ h1, h2{
 
 .mainText{
     border-radius: 5px;
+    background-color: #fff;
+    min-height: 280px;
     height: fit-content;
+    font-size: 40px;
 }
 .downloadBt{
-    width: 150px;
+    width: 120px;
+    background-color: #AEEE7E;
+    border: none;
+    border-radius: 5px;
 }
 .sidePanel{
     background-color: #fff;
     height: 925px;
     width: 510px;
+    border-radius: 15px;
 }
     .sidePanelSection{
         height: 20%;
