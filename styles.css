@@ -5,12 +5,16 @@
 body{
     background-color:floralwhite !important;
 }
+div{
+    border: 1px dashed black;
+}
 h1{
     font-family: Dongle;
 }
 
 .mainText{
-    border-radius: 5%;
+    border-radius: 5px;
+    height: fit-content;
 }
 .downloadBt{
     width: 150px;
@@ -20,3 +24,6 @@ h1{
     height: 918px;
     width: 510px;
 }
+    .sidePanelSection{
+        height: 20%;
+    }
