@@ -1,3 +1,4 @@
+/**** main content div responsiveness ****/
 @media (max-width: 1150px) {
     .mainContentContainer{
         position: relative;
@@ -18,5 +19,12 @@
     }
     .mainText {
         width: 100%;
+    }
+}
+
+/**** side panel responsiveness ****/
+@media (max-width: 550px) {
+    .sidePanel {
+        height: fit-content;
     }
 }
