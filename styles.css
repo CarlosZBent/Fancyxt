@@ -83,10 +83,11 @@ button:hover{
     }
         .fontTypeBt{
             width: 120px;
-            height: 33px;
-            margin: 10px 5px;
-            /* font-size: 12px; */
+            height: 35px;
+            margin: 10px 10px;
+            font-size: 90%;
             border: none;
+            padding: none;
             border-radius: 5px;
             background-color: white;
             box-shadow: var(--general-box-shadow);

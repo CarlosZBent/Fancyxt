@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Calibri;
+    src: url(fonts/Calibri\ Regular.ttf);
+}
+.font1{
+    font-family: Calibri;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+.font2{
+    font-family: Montserrat;
+    /* font-size: 18px; */
+}
+@font-face {
+    font-family: CourierPrime;
+    src: url(fonts/CourierPrime-Regular.ttf);
+}
+.font3{
+    font-family: CourierPrime;
+    /* font-size: 17px; */
+}
+@font-face {
+    font-family: DancingScript;
+    src: url(fonts/DancingScript-VariableFont_wght.ttf);
+}
+.font4{
+    font-family: DancingScript;
+}
+@font-face {
+    font-family: Tangerine;
+    src: url(fonts/Tangerine-Regular.ttf);
+}
+.font5{
+    font-family: Tangerine;
+    font-size: 25px;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+.font6{
+    font-family: Roboto;
+}
+@font-face {
+    font-family: Playfair;
+    src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+.font7{
+    font-family: Playfair;
+}
+@font-face {
+    font-family: Gluten;
+    src: url(fonts/Gluten-VariableFont_wght.ttf);
+}
+.font8{
+    font-family: Gluten;
+}
+@font-face {
+    font-family: Creepster;
+    src: url(/fonts/Creepster-Regular.ttf);
+}
+.font9{
+    font-family: Creepster;
+}
