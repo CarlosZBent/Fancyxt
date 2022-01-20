@@ -7,6 +7,9 @@
     src: url('Dongle-Regular.ttf');
 }
 body{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     /* background: linear-gradient(to right, #CAEAFF 40%, #ffcccc); */
     font-family: Dongle !important;
     font-size: 20px !important;
@@ -27,11 +30,17 @@ h1, h2{
 button:hover{ 
     box-shadow: var(--hover-box-shadow);
 }
-
+.mainContentContainer{
+    width: 50%;
+    position: sticky;
+    top: 0%;
+}
 .mainText{
     border-radius: 5px;
     background-color: #fff;
-    min-height: 280px;
+    min-height: 400px;
+    width: 75%;
+    min-width: 290px;
     height: fit-content;
     font-size: 40px;
 }

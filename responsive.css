@@ -1,0 +1,22 @@
+@media (max-width: 1150px) {
+    .mainContentContainer{
+        position: relative;
+    }
+}
+@media (max-width: 1000px) {
+    .mainContentContainer {
+        width: 100%;
+    }
+    .mainText {
+        width: 75%;
+    }
+}
+
+@media (max-width: 600px){
+    .mainContentContainer {
+        width: 100%;
+    }
+    .mainText {
+        width: 100%;
+    }
+}
