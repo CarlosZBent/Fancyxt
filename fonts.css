@@ -1,9 +1,9 @@
 @font-face {
-    font-family: Calibri;
+    font-family: CalibriExternal;
     src: url(fonts/Calibri\ Regular.ttf);
 }
 .font1{
-    font-family: Calibri;
+    font-family: CalibriExternal;
 }
 @font-face {
     font-family: Montserrat;

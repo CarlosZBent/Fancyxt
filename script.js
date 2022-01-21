@@ -1,4 +1,4 @@
-console.log('console working')
+console.log('js working')
 
 // *******************************************************************
 // snippet taken from tutorial. only changed the id names
@@ -25,4 +25,20 @@ document.getElementById('mainText').contentEditable = 'true';
         }
         }
     });
+// *******************************************************************
+
+// *******************************************************************
+// font type change
+$('button.fontTypeBt').click( function (font) {
+    font = $(this).css('font-family')
+    $('#mainText').css('font-family', font)
+})
+
+// text style change
+$('#textShadowBt').click(()=> {
+    $('#mainText').toggleClass('textShadow')
+})
+$('#smallCapsBt').click(()=> {
+    $('#mainText').toggleClass('smallCapsText')
+})
 // *******************************************************************
