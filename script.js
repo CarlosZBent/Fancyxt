@@ -48,3 +48,9 @@ $('button.backgroundColorBt').click( function (gradient) {
     $('#mainText').css('background', gradient)
 })
 // *******************************************************************
+// font color change
+$('button.fontColorBt').click( function (color) {
+    color = $(this).css('background-color')
+    $('#mainText').css('color', color)
+})
+// *******************************************************************
