@@ -54,3 +54,9 @@ $('button.fontColorBt').click( function (color) {
     $('#mainText').css('color', color)
 })
 // *******************************************************************
+// border radius change
+$('button.cornerCurveBt').click( function (curve) {
+    curve = $(this).css('border-radius')
+    $('#mainText').css('border-radius', curve)
+})
+// *******************************************************************
