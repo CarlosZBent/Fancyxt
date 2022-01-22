@@ -42,3 +42,9 @@ $('#smallCapsBt').click(()=> {
     $('#mainText').toggleClass('smallCapsText')
 })
 // *******************************************************************
+// background color change
+$('button.backgroundColorBt').click( function (gradient) {
+    gradient = $(this).css('background')
+    $('#mainText').css('background', gradient)
+})
+// *******************************************************************
