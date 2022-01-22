@@ -33,7 +33,24 @@ $('button.fontTypeBt').click( function (font) {
     font = $(this).css('font-family')
     $('#mainText').css('font-family', font)
 })
-
+// *******************************************************************
+// font size change
+$('button.fontSizeBtSmall').click(()=>{
+    $('#mainText').css('font-size') > '35px' 
+        ? $('#mainText').css('font-size', '30px')
+            : $('#mainText').css('font-size', '40px')
+    })  
+$('button.fontSizeBtLarge').click(()=>{
+    $('#mainText').css('font-size') < '50px' 
+        ? $('#mainText').css('font-size', '50px')
+            : $('#mainText').css('font-size', '40px')
+    })  
+$('button.fontSizeBtLarger').click(()=>{
+    $('#mainText').css('font-size') < '60px' 
+        ? $('#mainText').css('font-size', '60px')
+            : $('#mainText').css('font-size', '40px')
+    })  
+// *******************************************************************
 // text style change
 $('#textShadowBt').click(()=> {
     $('#mainText').toggleClass('textShadow')

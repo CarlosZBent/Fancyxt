@@ -102,6 +102,15 @@ button:hover{
             border-radius: 5px;
             background-color: white;
         }
+        .fontSizeBt{
+            width: 65px;
+            height: 40px;
+            font-size: 25px;
+            margin: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+        }
         .backgroundColorBt, .fontColorBt{
             margin: 5px 5px;
             border: none;
@@ -132,4 +141,14 @@ button:hover{
 }
 .smallCapsText{
     font-variant: small-caps;
+}
+/* font size utilitary classes */
+.fontSizeBtSmall{
+    font-size: medium;
+}
+.fontSizeBtLarge{
+    font-size: large;
+}
+.fontSizeBtLarger{
+    font-size: larger;
 }
