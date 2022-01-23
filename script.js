@@ -80,6 +80,19 @@ $('button.fontColorBt').click( function (color) {
 $('button.cornerCurveBt').click( function (curve) {
     curve = $(this).css('border-radius')
     $('#mainText').css('border-radius', curve)
+
+// making the active button visually active too
+let currentCurve = $('#mainText').css('border-radius')
+let cornerCurveButtons = Array.from($('#cornerCurveSection').children())
+for (const button of cornerCurveButtons) {
+    /* each time a cornerCurveBt is clicked, it'll check if any of this button's border radius
+    is equal to that of the mainText, if it finds a conicidence it activates said button.
+    When a different button is activated like this, the former loses the equality and 
+    therefore the color activation */
+    if (currentCurve == button.style.borderRadius) { 
+        button.classList.add('btn-outline-primary')
+    } else { button.classList.remove('btn-outline-primary') }
+}
 })
 // *******************************************************************
 // text style change
