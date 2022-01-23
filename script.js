@@ -73,7 +73,11 @@ $('button.backgroundColorBt').click( function (gradient) {
 let currentBgColor = $('#mainText').css('background-color')
 let backgroundColorButtons = Array.from($('div.backgroundColorSection').children())
 for (const button of backgroundColorButtons) {
-    /*  */
+    /* each time a button with this loop applied to it
+    is clicked, it'll check if any of it's kind has a value
+    applied to the mainText, if it finds a coincidence it visually activates said button.
+    When a different button is activated like this, the former loses the equality and 
+    therefore the color activation */
     if (currentBgColor == button.style.backgroundColor) { 
         button.classList.add('colorButtonActive')
     } else { button.classList.remove('colorButtonActive') }
@@ -84,6 +88,14 @@ for (const button of backgroundColorButtons) {
 $('button.fontColorBt').click( function (color) {
     color = $(this).css('background-color')
     $('#mainText').css('color', color)
+// making the active button visually active too
+let currentColor = $('#mainText').css('color')
+let colorButtons = Array.from($('div.fontColorSection').children())
+for (const button of colorButtons) {
+    if (currentColor == button.style.backgroundColor) { 
+        button.classList.add('colorButtonActive')
+    } else { button.classList.remove('colorButtonActive') }
+}
 })
 // *******************************************************************
 // border radius change
@@ -95,10 +107,6 @@ $('button.cornerCurveBt').click( function (curve) {
 let currentCurve = $('#mainText').css('border-radius')
 let cornerCurveButtons = Array.from($('#cornerCurveSection').children())
 for (const button of cornerCurveButtons) {
-    /* each time a cornerCurveBt is clicked, it'll check if any of this button's border radius
-    is equal to that of the mainText, if it finds a conicidence it activates said button.
-    When a different button is activated like this, the former loses the equality and 
-    therefore the color activation */
     if (currentCurve == button.style.borderRadius) { 
         button.classList.add('btn-outline-primary')
     } else { button.classList.remove('btn-outline-primary') }
