@@ -49,28 +49,21 @@ $('button.fontTypeBt').click( function (font) {
 // font size change
 $('button.fontSizeBtSmall').click(()=>{
     $('#mainText').css('font-size') > '35px' 
-        ? $('#mainText').css('font-size', '30px')
-            : $('#mainText').css('font-size', '40px')
+        ? $('#mainText').css('font-size', '30px') & $('button.fontSizeBtSmall').addClass('btn-outline-primary')
+            : $('#mainText').css('font-size', '40px') & $('button.fontSizeBtSmall').removeClass('btn-outline-primary')
     })  
 $('button.fontSizeBtLarge').click(()=>{
     $('#mainText').css('font-size') < '50px' 
-        ? $('#mainText').css('font-size', '50px')
-            : $('#mainText').css('font-size', '40px')
+        ? $('#mainText').css('font-size', '50px') & $('button.fontSizeBtLarge').addClass('btn-outline-primary')
+            : $('#mainText').css('font-size', '40px') & $('button.fontSizeBtLarge').removeClass('btn-outline-primary')
     })  
 $('button.fontSizeBtLarger').click(()=>{
     $('#mainText').css('font-size') < '60px' 
-        ? $('#mainText').css('font-size', '60px')
-            : $('#mainText').css('font-size', '40px')
+        ? $('#mainText').css('font-size', '60px') & $('button.fontSizeBtLarger').addClass('btn-outline-primary')
+            : $('#mainText').css('font-size', '40px') & $('button.fontSizeBtLarger').removeClass('btn-outline-primary')
     })  
 // *******************************************************************
-// text style change
-$('#textShadowBt').click(()=> {
-    $('#mainText').toggleClass('textShadow')
-})
-$('#smallCapsBt').click(()=> {
-    $('#mainText').toggleClass('smallCapsText')
-})
-// *******************************************************************
+
 // background color change
 $('button.backgroundColorBt').click( function (gradient) {
     gradient = $(this).css('background')
@@ -89,3 +82,12 @@ $('button.cornerCurveBt').click( function (curve) {
     $('#mainText').css('border-radius', curve)
 })
 // *******************************************************************
+// text style change
+$('#textShadowBt').click(()=> {
+    $('#mainText').toggleClass('textShadow')
+    $('#textShadowBt').toggleClass('btn-outline-primary')
+})
+$('#smallCapsBt').click(()=> {
+    $('#mainText').toggleClass('smallCapsText')
+    $('#smallCapsBt').toggleClass('btn-outline-primary')
+})
