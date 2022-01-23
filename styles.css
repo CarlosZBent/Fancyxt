@@ -23,10 +23,12 @@ body{
 }
 h1, h2{
     font-family: Dongle;
-    text-decoration: underline;
 }
 button:hover{ 
     box-shadow: var(--hover-box-shadow);
+}
+a {
+    text-decoration: none !important;
 }
 
 /* ************** specific styles ************** */
@@ -133,6 +135,36 @@ button:hover{
             border: none;
             border-radius: 5px;
             background-color: #fff;
+        }
+
+/* info overlay */
+.infoOverlay {
+    position: fixed; /* mantener la posición fija todo el tiempo */
+    display: none; /* escondido hasta ser invocado */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 0;
+    background-color: rgba(0,0,0,0.5); /* fondo negro opaco */
+    z-index: 2; /* aparecer encima del resto de los elementos */
+    }
+    .infoOverlayContent {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 30px;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        width: 40%;
+        min-width: 275px;
+        max-height: 70%;
+        overflow-y: scroll;
+        padding: 25px;
+        background-color: #fff;
+        border-radius: 5px;
         }
 
 /* change text type utilitary classes */

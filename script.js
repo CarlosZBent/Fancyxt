@@ -27,6 +27,18 @@ document.getElementById('mainText').contentEditable = 'true';
     });
 // *******************************************************************
 
+// Info overlay
+$('h2.info').click(()=>{
+    $('div.infoOverlay').css('display', 'block')
+})
+
+document.onclick = function(event){
+    let target = event.target;
+    if(target.className == 'infoOverlay') {
+    target.style.display = 'none';
+    }
+    }
+
 // *******************************************************************
 // font type change
 $('button.fontTypeBt').click( function (font) {
