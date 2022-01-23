@@ -136,6 +136,9 @@ a {
             border-radius: 5px;
             background-color: #fff;
         }
+        .colorButtonActive{
+            border: 4px solid rgba(55, 55, 230, 0.582);
+        }
 
 /* info overlay */
 .infoOverlay {

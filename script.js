@@ -68,6 +68,16 @@ $('button.fontSizeBtLarger').click(()=>{
 $('button.backgroundColorBt').click( function (gradient) {
     gradient = $(this).css('background')
     $('#mainText').css('background', gradient)
+
+// making the active button visually active too
+let currentBgColor = $('#mainText').css('background-color')
+let backgroundColorButtons = Array.from($('div.backgroundColorSection').children())
+for (const button of backgroundColorButtons) {
+    /*  */
+    if (currentBgColor == button.style.backgroundColor) { 
+        button.classList.add('colorButtonActive')
+    } else { button.classList.remove('colorButtonActive') }
+}
 })
 // *******************************************************************
 // font color change
