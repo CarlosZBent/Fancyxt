@@ -187,3 +187,103 @@ a {
 .fontSizeBtLarger{
     font-size: larger;
 }
+
+/* ********************************** */
+/**** main content div responsiveness ****/
+@media (max-width: 1150px) {
+    .mainContentContainer{
+        position: relative;
+    }
+}
+@media (max-width: 1000px) {
+    .mainContentContainer {
+        width: 100%;
+    }
+    .mainText {
+        width: 75%;
+    }
+}
+
+@media (max-width: 600px){
+    .mainContentContainer {
+        width: 100%;
+    }
+    .mainText {
+        width: 100%;
+    }
+}
+
+/**** side panel responsiveness ****/
+@media (max-width: 550px) {
+    .sidePanel {
+        height: fit-content; /*this releases the height to infinitely stretch, that way the content automatically arranges*/
+    }
+}
+/* ********************************** */
+@font-face {
+    font-family: CalibriExternal;
+    src: url(fonts/Calibri\ Regular.ttf);
+}
+.font1{
+    font-family: CalibriExternal;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+.font2{
+    font-family: Montserrat;
+    /* font-size: 18px; */
+}
+@font-face {
+    font-family: CourierPrime;
+    src: url(fonts/CourierPrime-Regular.ttf);
+}
+.font3{
+    font-family: CourierPrime;
+    /* font-size: 17px; */
+}
+@font-face {
+    font-family: DancingScript;
+    src: url(fonts/DancingScript-VariableFont_wght.ttf);
+}
+.font4{
+    font-family: DancingScript;
+}
+@font-face {
+    font-family: Tangerine;
+    src: url(fonts/Tangerine-Regular.ttf);
+}
+.font5{
+    font-family: Tangerine;
+    font-size: 25px;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+.font6{
+    font-family: Roboto;
+}
+@font-face {
+    font-family: Playfair;
+    src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+.font7{
+    font-family: Playfair;
+}
+@font-face {
+    font-family: Gluten;
+    src: url(fonts/Gluten-VariableFont_wght.ttf);
+}
+.font8{
+    font-family: Gluten;
+}
+@font-face {
+    font-family: Creepster;
+    src: url(/fonts/Creepster-Regular.ttf);
+}
+.font9{
+    font-family: Creepster;
+}
+/* ********************************** */
