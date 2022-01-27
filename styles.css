@@ -108,7 +108,7 @@ a {
             width: 120px;
             height: 35px;
             margin: 10px 10px;
-            font-size: 75%;
+            /* font-size: 95%; */
             border: none;
             border-radius: 5px;
             background-color: white;
@@ -269,35 +269,35 @@ a {
 }
 .font5{
     font-family: Tangerine;
-    /* font-size: 25px; */
-}
-/* @font-face {
-    font-family: Roboto;
-    src: url(fonts/Roboto-Regular.ttf);
-} */
-.font6{
-    font-family: Dongle;
-    /* font-size: 25px; */
+    font-size: 25px;
 }
 @font-face {
     font-family: Playfair;
     src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
 }
-.font7{
+.font6{
     font-family: Playfair;
 }
 @font-face {
     font-family: Gluten;
     src: url(fonts/Gluten-VariableFont_wght.ttf);
 }
-.font8{
+.font7{
     font-family: Gluten;
 }
 @font-face {
     font-family: Creepster;
     src: url(/fonts/Creepster-Regular.ttf);
 }
-.font9{
+.font8{
     font-family: Creepster;
+}
+/* @font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+} */
+.font9{
+    font-family: Dongle;
+    font-size: 25px;
 }
 /* ********************************** */
