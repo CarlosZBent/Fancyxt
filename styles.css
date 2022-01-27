@@ -94,13 +94,22 @@ a {
     .backgroundColorSection{
         padding-bottom: 15px;
     }
+    .fontTypeSection {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat (3, 1fr);
+        grid-template-areas: "header header header";
+    }
+        .fontTypeSection h2 {
+            grid-area: header;
+            width: 100%;
+        }
         .fontTypeBt{
             width: 120px;
             height: 35px;
             margin: 10px 10px;
-            font-size: 90%;
+            font-size: 75%;
             border: none;
-            padding: none;
             border-radius: 5px;
             background-color: white;
         }
@@ -202,6 +211,10 @@ a {
     .mainText {
         width: 75%;
     }
+    .fontTypeSection {
+        display: initial;
+    }
+        
 }
 
 @media (max-width: 600px){
@@ -256,14 +269,15 @@ a {
 }
 .font5{
     font-family: Tangerine;
-    font-size: 25px;
+    /* font-size: 25px; */
 }
-@font-face {
+/* @font-face {
     font-family: Roboto;
     src: url(fonts/Roboto-Regular.ttf);
-}
+} */
 .font6{
-    font-family: Roboto;
+    font-family: Dongle;
+    /* font-size: 25px; */
 }
 @font-face {
     font-family: Playfair;
