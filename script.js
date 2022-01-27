@@ -48,7 +48,7 @@ $('button.fontTypeBt').click( function (font) {
 // *******************************************************************
 // font size change
 $('button.fontSizeBtSmall').click(()=>{
-    $('#mainText').css('font-size') > '35px' 
+    $('#mainText').css('font-size') > '30px' 
         ? $('#mainText').css('font-size', '30px') & $('button.fontSizeBtSmall').addClass('btn-outline-primary') 
         & $('button.fontSizeBtLarge').addClass('btn-secondary') & $('button.fontSizeBtLarger').addClass('btn-secondary') 
             : $('#mainText').css('font-size', '40px') & $('button.fontSizeBtSmall').removeClass('btn-outline-primary')
