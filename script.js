@@ -1,6 +1,7 @@
 console.log('js working')
 
 // *******************************************************************
+
 // snippet taken from tutorial. only changed the id names
 document.getElementById('mainText').contentEditable = 'true';
     document.getElementById('mainText').designMode='on';
@@ -8,7 +9,12 @@ document.getElementById('mainText').contentEditable = 'true';
         $("#downloadBt").click(function() {
         html2canvas($("#mainText"), {
             onrendered: function(canvas) {
-            saveAs(canvas.toDataURL(), 'Fancyxt.png');
+            /* getting the text value from the mainText to add a part of it to the file name */
+            let mainTextText = $('#mainText').text()
+            let mainTextArray = Array.from(mainTextText).splice(0, 60)
+            let mainTextArrayToPrint = mainTextArray.join('')
+            
+            saveAs(canvas.toDataURL(), `${mainTextArrayToPrint} - Fancyxt.png`);
             }
         });
         });

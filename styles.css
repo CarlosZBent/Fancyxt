@@ -17,7 +17,7 @@ body{
 
     /* frozen glass code*/
     background-image: url(backgrounds/abstract2.png);
-    background-repeat: no-repeat;
+    background-repeat: initial;
     background-size: cover;
     background-attachment: fixed;
 }
