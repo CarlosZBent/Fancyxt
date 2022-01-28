@@ -53,27 +53,34 @@ $('button.fontTypeBt').click( function (font) {
 })
 // *******************************************************************
 // font size change
-$('button.fontSizeBtSmall').click(()=>{
-    $('#mainText').css('font-size') > '30px' 
-        ? $('#mainText').css('font-size', '30px') & $('button.fontSizeBtSmall').addClass('btn-primary') 
-        & $('button.fontSizeBtLarge').addClass('btn-secondary') & $('button.fontSizeBtLarger').addClass('btn-secondary') 
-            : $('#mainText').css('font-size', '40px') & $('button.fontSizeBtSmall').removeClass('btn-primary')
-            & $('button.fontSizeBtLarge').removeClass('btn-secondary') & $('button.fontSizeBtLarger').removeClass('btn-secondary')
-    })  
-$('button.fontSizeBtLarge').click(()=>{
-    $('#mainText').css('font-size') < '50px' 
-        ? $('#mainText').css('font-size', '50px') & $('button.fontSizeBtLarge').addClass('btn-primary')
-        & $('button.fontSizeBtSmall').addClass('btn-secondary') & $('button.fontSizeBtLarger').addClass('btn-secondary')
-            : $('#mainText').css('font-size', '40px') & $('button.fontSizeBtLarge').removeClass('btn-primary')
-            & $('button.fontSizeBtSmall').removeClass('btn-secondary') & $('button.fontSizeBtLarger').removeClass('btn-secondary')
-    })  
-$('button.fontSizeBtLarger').click(()=>{
-    $('#mainText').css('font-size') < '60px' 
-        ? $('#mainText').css('font-size', '60px') & $('button.fontSizeBtLarger').addClass('btn-primary')
-        & $('button.fontSizeBtSmall').addClass('btn-secondary') & $('button.fontSizeBtLarge').addClass('btn-secondary')
-            : $('#mainText').css('font-size', '40px') & $('button.fontSizeBtLarger').removeClass('btn-primary')
-            & $('button.fontSizeBtSmall').removeClass('btn-secondary') & $('button.fontSizeBtLarge').removeClass('btn-secondary')
-    })  
+$('.fontSizeBtSmall').click(()=>{
+    $('#mainText').css('font-size', '30px')
+})
+$('.fontSizeBtNormal').click(()=>{
+    $('#mainText').css('font-size', '40px')
+})
+$('.fontSizeBtLarge').click(()=>{
+    $('#mainText').css('font-size', '50px')
+})
+$('.fontSizeBtLarger').click(()=>{
+    $('#mainText').css('font-size', '60px')
+})
+/* if statement to check the active font size buttons and visually activate it */
+$('.fontSizeBt').click(()=>{
+    let mainTextFontSize = $('#mainText').css('font-size');
+    if (mainTextFontSize == '30px') {
+        $('.fontSizeBtSmall').addClass('btn-outline-primary')
+    } else { $('.fontSizeBtSmall').removeClass('btn-outline-primary') }
+    if (mainTextFontSize == '40px') {
+        $('.fontSizeBtNormal').addClass('btn-outline-primary')
+    } else { $('.fontSizeBtNormal').removeClass('btn-outline-primary') }
+    if (mainTextFontSize == '50px') {
+        $('.fontSizeBtLarge').addClass('btn-outline-primary')
+    } else { $('.fontSizeBtLarge').removeClass('btn-outline-primary') }
+    if (mainTextFontSize == '60px') {
+        $('.fontSizeBtLarger').addClass('btn-outline-primary')
+    } else { $('.fontSizeBtLarger').removeClass('btn-outline-primary') }
+})
 // *******************************************************************
 
 // background color change

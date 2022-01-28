@@ -98,11 +98,12 @@ a {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat (3, 1fr);
+        justify-items: center;
+        height: fit-content;
         grid-template-areas: "header header header";
     }
         .fontTypeSection h2 {
             grid-area: header;
-            width: 100%;
         }
         .fontTypeBt{
             width: 120px;
@@ -113,15 +114,34 @@ a {
             border-radius: 5px;
             background-color: white;
         }
+    .fontSizeSection{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        grid-template-areas: "header header header header";
+    }
+        .fontSizeSection h2{
+            grid-area: header;
+        }
         .fontSizeBt{
             width: 65px;
-            height: 40px;
-            font-size: 25px;
-            margin: 5px 10px;
             border: none;
             border-radius: 5px;
             background-color: #fff;
         }
+        .fontSizeBtSmall{
+            font-size: medium;
+        }
+        .fontSizeBtNormal{
+            font-size: large;
+        }
+        .fontSizeBtLarge{
+            font-size: x-large;
+        }
+        .fontSizeBtLarger{
+            font-size: x-large;
+        }
+        
         .backgroundColorBt, .fontColorBt{
             margin: 5px 5px;
             border: none;
@@ -185,16 +205,6 @@ a {
 }
 .smallCapsText{
     font-variant: small-caps;
-}
-/* font size utilitary classes */
-.fontSizeBtSmall{
-    font-size: medium;
-}
-.fontSizeBtLarge{
-    font-size: large;
-}
-.fontSizeBtLarger{
-    font-size: larger;
 }
 
 /* ********************************** */
