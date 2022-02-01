@@ -1,7 +1,14 @@
 console.log('js working')
+console.log($('#mainText').text());
+// *******************************************************************
+// clean maintext text value on click
+$('#mainText').click(()=>{
+    if ($('#mainText').text() == "write something beautiful..." ) {
+    $('#mainText').text('');
+    }
+})
 
 // *******************************************************************
-
 // snippet taken from tutorial. only changed the id names
 document.getElementById('mainText').contentEditable = 'true';
     document.getElementById('mainText').designMode='on';
