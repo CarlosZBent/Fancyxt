@@ -1,5 +1,3 @@
-console.log('js working')
-console.log($('#mainText').text());
 // *******************************************************************
 // clean maintext text value on click
 $('#mainText').click(()=>{

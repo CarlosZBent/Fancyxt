@@ -151,7 +151,8 @@ a {
         }
         .cornerCurveBt{
             width: 65px;
-            font-size: 25px;
+            font-size: 100%;
+            max-height: 32px;
             margin: 5px 5px;
             border: none;
             background-color: #fff;
