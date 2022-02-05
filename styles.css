@@ -125,6 +125,7 @@ a {
         }
         .fontSizeBt{
             width: 65px;
+            max-height: 38px;
             border: none;
             border-radius: 5px;
             background-color: #fff;
