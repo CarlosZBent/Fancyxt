@@ -108,6 +108,7 @@ a {
         .fontTypeBt{
             width: 120px;
             height: 35px;
+            max-height: fit-content;
             margin: 10px 10px;
             /* font-size: 95%; */
             border: none;
@@ -215,7 +216,7 @@ a {
         position: relative;
     }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1070px) {
     .mainContentContainer {
         width: 100%;
     }
@@ -227,7 +228,6 @@ a {
     }
         
 }
-
 @media (max-width: 600px){
     .mainContentContainer {
         width: 100%;
