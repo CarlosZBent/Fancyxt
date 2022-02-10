@@ -85,12 +85,12 @@ a {
         padding: 5px;
         position: relative;
     }
-    .sidePanelSection:not(.backgroundColorSection){
+    /* .sidePanelSection:not(.backgroundColorSection){
         /* all sections except the background 
         color one have bigger padding 
-        to prevent it from getting to big*/
+        to prevent it from getting to big
         padding: 15px;
-    }
+    } */
     .backgroundColorSection{
         padding-bottom: 15px;
     }
