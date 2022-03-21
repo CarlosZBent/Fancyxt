@@ -46,6 +46,10 @@ a {
     height: fit-content;
     font-size: 40px;
 }
+.domain-notice{
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    color: rgb(208, 211, 61);
+}
 .downloadBt{
     width: 120px;
     background-color: #508b22;
@@ -172,7 +176,7 @@ a {
         }
 
 /* info overlay */
-.infoOverlay {
+.infoOverlay, .domainNoticeOverlay {
     position: fixed; /* mantener la posición fija todo el tiempo */
     display: none; /* escondido hasta ser invocado */
     width: 100%;
@@ -185,7 +189,7 @@ a {
     background-color: rgba(0,0,0,0.5); /* fondo negro opaco */
     z-index: 2; /* aparecer encima del resto de los elementos */
     }
-    .infoOverlayContent {
+    .infoOverlayContent, .domainNoticeOverlayContent {
         position: absolute;
         top: 50%;
         left: 50%;

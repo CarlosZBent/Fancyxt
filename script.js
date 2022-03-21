@@ -43,9 +43,13 @@ $('h2.info').click(()=>{
     $('div.infoOverlay').css('display', 'block')
 })
 
+$('h3.domain-notice').click(()=>{
+    $('div.domainNoticeOverlay').css('display', 'block')
+})
+
 document.onclick = function(event){
     let target = event.target;
-    if(target.className == 'infoOverlay') {
+    if(target.className == 'infoOverlay' || target.className == 'domainNoticeOverlay') {
     target.style.display = 'none';
     }
     }
