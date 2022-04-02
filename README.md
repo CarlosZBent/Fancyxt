@@ -1,5 +1,5 @@
 # Fancyxt
-Give Fancyxt an input, style it, and it will turn it into a cool loking image you can download. You can fiond it [here](https://carloszbent.github.io/Fancyxt).
+Give Fancyxt an input, style it, and it will turn it into a cool looking image you can download. You can find it [here](https://carloszbent.github.io/Fancyxt).
 
 # How does it work?
 Fancyxt's main functioning is very simple. The `body` is divided in two `divs`. The one on the left contains the text editor and the info texts, and the one on the right contains the side panel.
